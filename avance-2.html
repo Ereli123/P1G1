@@ -6,11 +6,27 @@
 <body>
 <h2>Universidad Privada Cumbre</h2>
 <h1>Ereli Viviana Ruiz Vargas</h1>
-<button onclick=¨MyPrimerAlgoritmo()¨>Juan es mayor de edad?</button>
+<button onclick="MyPrimerAlgoritmo()">Juan es mayor de edad?</button>
+<button onclick="MySegundoAlgoritmo()">Juan es adulto mayor?</button>
 
 <script>
 function MyPrimerAlgoritmo(){
+	var edad;
+	edad = prompt("Ingrese su edad:", "18");
+	if(edad >= 18){
+		alert("Juan es MAYOR de edad")
+	}else{
+		alert("Juan es MENOR de edad")
+	}
+}
 
+function MySegundoAlgoritmo(){
+	var edad = prompt("Ingrese se edad:", "18");
+	if(edad >=60){
+		alert("Juan es de la tercera edad");
+	}else{
+		alert("Juan no es de la tercera edad");
+	}
 }
 </script>
 
