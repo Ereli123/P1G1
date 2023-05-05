@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Mi primera pagina web</title>
+</head>
+<body>
+<h2>Universidad Privada Cumbre</h2>
+<h1>Ereli Viviana Ruiz Vargas</h1>
+<button onclick="AlgoritmoUno()">Es N mayor a 7?</button>
+<button onclick="AlgoritmoDos()">A y B, cual es menor?</button>
+<button onclick="AlgoritmoTres()">N dentro del rango 7 y 15</button>
+
+<script>
+//Codigo de programacion - INICIO
+//Ejercicio: Como saber si un numero es mayor que 7
+function AlgoritmoUno(){
+	var N = prompt("Ingrese N:", 45);
+	if (N == 7){
+		alert(N + " es IGUAL que 7");
+	}
+	else{
+		if (N > 7){
+			alert(N + " es MAYOR que 7");
+		}
+		else{
+			alert(N + " es MENOR que 7");
+		}
+	}
+}
+
+//Ejercicio: Dado dos numeros A y B, retornar el MENOR
+function AlgoritmoDos(){
+	var A = prompt("Ingrese A:", 8);
+	var B = prompt("Ingrese B;", 5);
+	if (A > B){
+		alert(B + " es menor");
+	}
+	else {
+		alert(A + " es menor");
+	}
+}
+
+//Ejercicio: Dado un numero N, retornar si se encuentra DENTRO del rango de 7 y 15
+function AlgoritmoTres(){
+	var N = prompt("Ingrese N:", 9);
+	var A = 7
+	var B = 15
+	if ((N > A) && ( N < B)){
+		alert(N + " esta DENTRO del rango")
+	}else{
+		alert(N + " esta FUERA del rango")
+	}
+}
+//Codigo de programacion - FIN
+</script>
+
+</body>
+</html> 
