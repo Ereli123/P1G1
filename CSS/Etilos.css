@@ -1,0 +1,78 @@
+/*
+COMENTARIOS
+*/
+
+/*
+
+CSS contiene CLASES
+Que es una clase?
+
+.NOMBRE_CLASE{
+    ESTILO_1;
+    ESTILO_2;
+    ESTILO_3;
+}
+
+*/
+
+/*
+Como referenciar el archivo (.css) con (.html)
+Dentro de la etiqueta <HEAD> se escribe la referencia al archivo (.css)
+
+<head>
+    <link rel="stylesheet" type="text/css"
+    href="UBICACION/NOMBRE_ARCHIVO.CSS">
+</head>
+
+*/
+
+
+.video_fondo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 120%;
+    z-index: -1; 
+}
+
+.letra_blanca {
+    color: white;
+}
+
+.letra_roja {
+    color: rgb(206, 107, 107);
+}
+
+.letra_verde{
+    color: green;
+}
+
+.fondo_azul {
+    background-color: blue;
+}
+
+.fondo_verde {
+    background-color: green;
+    }
+
+    h2:hover {
+        background-color: yellow;
+    }
+
+.fondo_rojo {
+    background-color: red;
+}
+
+.my_tabla {
+    color: black;
+    width: 100%;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .my_tabla {
+        color: red;
+        width: 50%;
+        font-size: 10px;
+    }
+}
