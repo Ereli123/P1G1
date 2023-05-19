@@ -1,0 +1,17 @@
+table {
+    border: pink 1px solid;
+    width: 100%;
+}
+
+td,
+th {
+    border: #34d42f 1px solid;
+}
+
+td {
+    width: 25%;
+}
+
+tr {
+    height: 50px;
+}
