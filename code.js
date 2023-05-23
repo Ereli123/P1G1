@@ -225,3 +225,50 @@ function MostrarNumeroMenor() {
         alert( B + " es menor");
     }
 }
+
+function NmultiploDeM() {
+    var N = parseInt(prompt("Ingrese un N: ", 10))
+    var M = parseInt(prompt("Ingrese un M: ", 1))
+    if ((N % M) == 0) {
+        alert( N + " es multiplo de " + M);
+    }else {
+        alert( N + " no es multiplo de " + M);
+    }
+}
+
+function SumaDigMultiplo3deN() {
+    var N = parseInt(prompt("Ingrese un numero: ", 23462314))
+    var sum = 0
+    var dig = 0
+    while (N != 0) {
+        dig = parseInt(N % 10)
+        if ((dig % 3) == 0) {
+            sum = sum + dig
+        }
+        N = parseInt(N / 10)
+    }
+    alert(sum)
+}
+
+function SumaNumerosEntreAyB() {
+    var A = parseInt(prompt("Ingrese A: ", 2))
+    var B = parseInt(prompt("Ingrese B: ", 10))
+    var suma = 0
+    while ( A <= B) {
+        suma = suma + A
+        A = A + 1
+    }
+    alert(suma)
+}
+
+function PromedioDeNotas() {
+    var N = parseInt(prompt("Ingrese N: ", 0))
+    var sumaNota = 0
+    var i = 0
+    while (N > i) {
+        i = i + 1
+        var nota = parseInt(prompt("Ingrese Nota: ", 80))
+        sumaNota = sumaNota + nota
+    }
+    alert(sumaNota/N)
+}
