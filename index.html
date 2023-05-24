@@ -15,7 +15,10 @@
     <h1>CALCULADORA ESTÁNDAR</h1>
     <table border="1px">
         <tr>
-            <td colspan="4">RESULTADO</td>
+            <td colspan="4">
+                <input id="resultado"
+                type="text" placeholder="0"
+            </td>
         </tr>
         <tr>
             <td><button onclick="factorial()">factorial</button></td>
@@ -24,26 +27,26 @@
             <td><button onclick="dividir()">dividir</button></td>
         </tr>
         <tr>
-            <td><button onclick="siete()">7</button></td>
-            <td><button onclick="ocho()">8</button></td>
-            <td><button onclick="nueve()">9</button></td>
+            <td><button onclick="numero(7)">7</button></td>
+            <td><button onclick="numero(8)">8</button></td>
+            <td><button onclick="numero(9)">9</button></td>
             <td><button onclick="multiplicar()">multiplicar</button></td>           
         </tr>
         <tr>
-            <td><button onclick="cuatro()">4</button></td>
-            <td><button onclick="cinco()">5</button></td>
-            <td><button onclick="seis()">6</button></td>
-            <td><button onclick="menos()">menos</button></td>            
+            <td><button onclick="numero(4)">4</button></td>
+            <td><button onclick="numero(5)">5</button></td>
+            <td><button onclick="numero(6)">6</button></td>
+            <td><button onclick="restar()">restar</button></td>            
         </tr>
         <tr>
-            <td><button onclick="uno()">1</button></td>
-            <td><button onclick="dos()">2</button></td>
-            <td><button onclick="tres()">3</button></td>
-            <td><button onclick="mas()">mas</button></td>            
+            <td><button onclick="numero(1)">1</button></td>
+            <td><button onclick="numero(2)">2</button></td>
+            <td><button onclick="numero(3)">3</button></td>
+            <td><button onclick="sumar()">sumar</button></td>            
         </tr>
         <tr>
             <td><button onclick="inverso()">+/-</button></td>
-            <td><button onclick="cero()">0</button></td>
+            <td><button onclick="numero(0)">0</button></td>
             <td><button onclick="MOD()">MOD</button></td>
             <td><button onclick="igual()">igual</button></td>            
         </tr>

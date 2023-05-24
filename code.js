@@ -18,6 +18,28 @@ function factorialN() {
     }
 }
 
+function calcularFactorial(N) {
+    //var N = prompt("Ingrese un valor:", 3);
+    var i = 1;
+    var resp = 1;
+
+    if (N >= 0) {
+        if (N == 0) {
+            //alert("El factorial de " + N + " es " + resp + ".");
+            return resp
+        } else {
+            while (i <= N) {
+                resp *= i;
+                i += 1;
+            }
+            //alert("El factorial de " + N + " es " + resp + ".");
+            return resp
+        }
+    } else {
+        alert("No existe el factorial de un negativo.");
+    }
+}
+
 function mayorAyB() {
     var A = prompt("Ingrese A", 10);
     A = parseInt(A);
@@ -272,3 +294,117 @@ function PromedioDeNotas() {
     }
     alert(sumaNota/N)
 }
+
+
+var myVariableGlobal = "Hola Mundo"
+
+function obtenerNombreCompleto (nombre , apellido) {
+    var nombreCompleto = nombre + " " + apellido + " " + myVariableGlobal
+    return nombreCompleto
+}
+
+function obtenerEdad (edad) {
+    edad = edad + 18
+    return edad
+}
+
+function verificarMayorEdad (edad){
+    if (edad >= 18){
+        alert("Puedes pasar " + myVariableGlobal)
+    }else{
+        alert("Vuelve cuando tengas 18 " + myVariableGlobal)
+    }
+}
+
+function funcionConReturn () {
+    var myNombreCompleto = obtenerNombreCompleto("Ereli", "Ruiz")
+    var myEdad = obtenerEdad(5)
+    alert("Nombre: " + myNombreCompleto)
+    alert("Edad: " + myEdad)
+    verificarMayorEdad(myEdad)
+}
+
+/* SECCION DE CODIGO PARA LA CALCULADORA*/
+
+//Dar un numero valor al INPUT "resultado" en la pag HTML
+
+function darValor(valor) {
+    document.getElementById("resultado").value = valor
+}
+
+// Obtener el valor actual del IN`PUT "resultado" en la pag HTML
+function obtenerValor(){
+    var nro = document.getElementById("resultado").value
+    return nro
+    //alert(nro)
+}
+
+//adjuntsar un numero valor a la derecha
+//del INPUT "resultado" en la pag HTML
+function adjuntarValor(numero){
+    var actualNumero = obtenerValor()
+    var juntarNumero = actualNumero + "" + numero
+    darValor(juntarNumero)
+}
+
+function factorial(){
+    var N = obtenerValor()
+    var resultadoFact = calcularFactorial(N)
+    darValor(resultadoFact)
+    //alert("soy factorial")
+}
+
+function potencia() {
+alert("sor potencia")
+}
+
+function borrar(){
+darValor("")
+}
+
+function dividir() {
+alert("soy dividir")
+}
+
+function numero(dig) {
+adjuntarValor(dig)
+//alert("soy numero" + dig)
+}
+
+function multiplicar() {
+alert("soy multiplicar")
+}
+
+function restar() {
+alert("soy restar")
+}
+
+function sumar() {
+alert("soy sumar")
+}
+
+function igual() {
+alert("sor igual")
+}
+
+function MOD() {
+alert("soy MOD")
+}
+
+function inverso() {
+var valorResultado = obtenerValor()
+    //alert("soy inverso " + valorResultado)
+    if(valorResultado == 0){
+        //nada
+    }else{
+        if(valorResultado > 0){
+            //positivo
+            valorResultado = valorResultado * -1
+        }else{
+            //negativo
+            valorResultado = valorResultado * -1
+        }
+    }
+    darValor(valorResultado)
+    //alert("soy inverso: " + valorResultado)
+    }
