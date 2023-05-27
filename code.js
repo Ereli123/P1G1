@@ -408,3 +408,97 @@ var valorResultado = obtenerValor()
     darValor(valorResultado)
     //alert("soy inverso: " + valorResultado)
     }
+
+
+
+    function GetFrecuencyOffChar() {
+        var cadena = prompt("Ingrese una cadena", "Universidad Cumbre")
+        var longitudCad = cadena.length
+        var i = 0
+        var contar = 0
+    
+    }
+
+    function grtCharByPosition() {
+        var cadena = prompt("Ingrese una cadena", "Hola Mundo")
+        var pos = parseInt(prompt("Ingrese uina posicion", 3))
+        var caracter = cadena[pos]
+        alert(caracter)
+    }
+
+    function joinTwoStrings(){
+        var cadenaA = prompt("Ingrese la cadena A","Hola")
+        var cadenaB = prompt("Ingrese la cadena B", "Mundo")
+        var cadenasUnidas = cadenaA + cadenaB
+        alert(cadenasUnidas)
+    }
+
+    function aCharFrequency() {
+        var cadena = prompt("Ingrese una cadeena", "Hola Mundo")
+        
+    }
+
+    function MiNombreASCII(){
+        var var_E = String.fromCharCode(69)
+        var var_r = String.fromCharCode(82 + 32)
+        var var_e = String.fromCharCode(69 + 32)
+        var var_l = String.fromCharCode(76 + 32)
+        var var_i = String.fromCharCode(73 + 32)
+        var var_espacio = String.fromCharCode(32)
+        var var_V = String.fromCharCode(86)
+        var var_i = String.fromCharCode(73 + 32)
+        var var_v = String.fromCharCode(86 + 32)
+        var var_i = String.fromCharCode(73 + 32)
+        var var_a = String.fromCharCode(65 + 32)
+        var var_n = String.fromCharCode(78 + 32)
+        var var_a = String.fromCharCode(65 + 32)
+        var var_espacio = String.fromCharCode(32)
+        var var_R = String.fromCharCode(82)
+        var var_u = String.fromCharCode(85 + 32)
+        var var_i = String.fromCharCode(73 + 32)
+        var var_z = String.fromCharCode(90 + 32)
+        var var_espacio = String.fromCharCode(32)
+        var var_V = String.fromCharCode(86)
+        var var_a = String.fromCharCode(65 + 32)
+        var var_r = String.fromCharCode(82 + 32)
+        var var_g = String.fromCharCode(71 + 32)
+        var var_a = String.fromCharCode(65 + 32)
+        var var_s = String.fromCharCode(83 + 32)
+        alert(var_E + var_r + var_e + var_l + var_i + var_espacio +
+              var_V + var_i + var_v + var_i + var_a + var_n + var_a + var_espacio
+               + var_R + var_u + var_i + var_z + var_espacio
+              + var_V + var_a + var_r + var_g + var_a + var_s)
+    }
+
+    function countVocals(){
+        var cadena = prompt("Ingrese una cadena", "Hola Mundo")
+        var longCad = cadena.length
+        var i = 0
+        var frecuencia = 0
+
+        while(i < longCad) {
+            var caracter = cadena[i]
+            if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u'
+            || caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O' || caracter == 'U') {
+                frecuencia = frecuencia + 1
+            }
+            i++
+        }
+        alert("La cantidad de vocales es: " + frecuencia)
+    }
+
+    function contarPalabras() {
+        var cadena = prompt("Ingrese una cadena", "Hola Mundo")
+        var longCad = cadena.length
+        var i = 0
+        var frecuencia = 1
+
+        while(i < longCad) {
+            var caracter = cadena[i]
+            if (caracter == " ") {
+                frecuencia = frecuencia + 1
+            }
+            i++
+        }
+        alert("La cantidad de palabras es: " + frecuencia)
+    }
