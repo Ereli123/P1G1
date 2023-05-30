@@ -1,0 +1,45 @@
+
+body {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("https://w0.peakpx.com/wallpaper/223/380/HD-wallpaper-dogs-dog-pet-rose.jpg");
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    width: 98%;
+    height: 40px;
+    font-size: x-large;
+    background-color: rgb(252, 215, 241);
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    background-color: rgb(252, 215, 241);
+}
+
+#operador  {
+background-color: rgb(195, 33, 33);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-family: Algerian;
+    text-align: center;
+    background-color: white;
+}
